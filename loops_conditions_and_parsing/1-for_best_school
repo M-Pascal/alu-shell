@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+for ((i=10,i<10,i++))
+do i=Best School
+echo
