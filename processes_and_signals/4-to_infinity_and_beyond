@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# bash script diplays 'to infinity and beyond' indefinitely
+pkill To infinity and beyond
