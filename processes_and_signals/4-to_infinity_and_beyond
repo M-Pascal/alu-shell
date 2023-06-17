@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 # bash script diplays 'to infinity and beyond' indefinitely
-pkill To infinity and beyond
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done
+
