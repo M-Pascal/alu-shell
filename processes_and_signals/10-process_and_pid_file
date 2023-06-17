@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 # script line that displays many things at time and terminate itself
-echo $$ > /var/run/myscript.pid
-trap "echo"Y U no love me?!"" 2
-trap'rm /var/run/myscrpit.pid' 4 16
-while true;
-do
-echo "To infinity and beyond"
-sleep 2
-echo "I hate the kill command"
+file="/var/run/myscript.pid"
+echo $$ > "$file"
+trap 'echo"I hate the kill command"; rm "$file"; exit' SIGTERM SIGQUIT
+trap 'echo "Y U no love me?!"' SIGINT
+while :;do
+    echo "To infinity and beyond"
+    sleep 2
 done
